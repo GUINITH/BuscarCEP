@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscarCep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="home">
+        <h1 class="title-container">Busca de CEP</h1>
+        <div id="container">
+            <div class="informacoes-iniciais">
+                <h2>Informações de Uso</h2>
+                <ul>
+                    <li>
+                        <p>Digite na caixa de texto abaixo somente os números do CEP, por exemplo: 20971211 </p>
+                    </li>
+                    <li>
+                        <p>Não são permitidos CEP com números espaçados, com traços ou alfanuméricos, exemplos: '2097 1 21', '2091-212' e 'A201O461' </p>
+                    </li>
+                </ul>
+
+                <form id="cep-form">
+                    <input type="text" id="Cep-do-usuario" placeholder="9010211">
+                    <button onclick="buscarCep()" type="button">Pesquisar</button>
+                </form>
+            </div>
+
+            <div id="response">
+
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
